@@ -1,4 +1,4 @@
-from flask import Flask,request
+from flask import Flask, jsonify
 app = Flask(__name__)
 
 @app.route('/<gurih>')
@@ -13,3 +13,11 @@ def show_post(post_id):
 @app.route('/crot', methods=['POST'])
 def login():
 	return request.form['anu']
+
+
+@app.route('/input/alamat')
+def alamat():
+    return jsonify(
+        kodepos="40121",
+        wilayah="CibeunyingKidul"
+    )
