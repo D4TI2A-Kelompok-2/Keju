@@ -17,7 +17,14 @@ def login():
 
 @app.route('/input/alamat')
 def alamat():
-    return jsonify(
-        kodepos="40121",
-        wilayah="CibeunyingKidul"
-    )
+    alamat = [
+    {
+        'kodepos':40121,
+        'kelurahan':'cicadas'
+    },
+    {
+        'kodepos':40611,
+        'kelurahan':'cigending'
+    }
+]
+    return jsonify({'daftar alamat':alamat})  #will return the json
