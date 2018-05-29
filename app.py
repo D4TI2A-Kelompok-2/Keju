@@ -53,6 +53,10 @@ def alamat():
     {
         'kodepos' :63471,
         'kelurahan' :'mangunsuman'
+    },
+    {
+        'kodepos' :34117,
+        'kelurahan' :'banjar sari'
     }
 ]
     return jsonify({'daftar alamat':alamat})  #will return the json
